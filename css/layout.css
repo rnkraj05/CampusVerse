@@ -1,0 +1,235 @@
+/*
+========================================
+CampusVerse Layout System
+Version : 1.0
+Author : Raunak Raj
+========================================
+*/
+
+/* 1. Container */
+
+.container{
+    width:100%;
+    max-width:var(--container-width);
+    margin-inline:auto;
+    padding-inline:var(--container-padding);
+
+    position:relative;
+}
+/* 2. Sections */
+
+.section{
+    padding-block:var(--space-8);
+}
+
+/* 3. Display Utilities */
+
+.d-block{
+    display:block;
+}
+
+.d-inline{
+    display:inline;
+}
+
+.d-grid{
+    display:grid;
+}
+
+.d-none{
+    display:none;
+}
+
+/* 4. Flex Utilities */
+
+.flex{
+    display:flex;
+}
+
+.flex-column{
+    flex-direction:column;
+}
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.flex-1{
+    flex:1;
+}
+
+/* 5. Grid System */
+
+.grid{
+    display:grid;
+    gap:var(--space-4);
+}
+
+.grid-1{
+    grid-template-columns:1fr;
+}
+
+.grid-2{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid-3{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.grid-4{
+    grid-template-columns:repeat(4,1fr);
+}
+
+/* 6. Width Utilities */
+
+.w-100{
+    width:100%;
+}
+
+.w-auto{
+    width:auto;
+}
+
+/* 7. Height Utilities */
+
+.h-100{
+    height:100%;
+}
+
+.min-vh{
+    min-height:100vh;
+}
+
+/* 8. Spacing Utilities */
+
+.gap-0{
+    gap:0;
+}
+
+.gap-1{
+    gap:var(--space-1);
+}
+
+.gap-2{
+    gap:var(--space-2);
+}
+
+.gap-3{
+    gap:var(--space-3);
+}
+
+.gap-4{
+    gap:var(--space-4);
+}
+
+.gap-5{
+    gap:var(--space-5);
+}
+
+.gap-6{
+    gap:var(--space-6);
+}
+
+.gap-7{
+    gap:var(--space-7);
+}
+
+.gap-8{
+    gap:var(--space-8);
+}
+
+/* 9. Alignment Utilities */
+
+.items-center{
+    align-items:center;
+}
+
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* 10. Overflow Utilities  */
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+.overflow-auto{
+    overflow:auto;
+}
+
+/* 11. Position Utilities  */
+
+.relative{
+    position:relative;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.fixed{
+    position:fixed;
+}
+
+/* 12. Position Helpers  */
+
+.top-0{
+    top:0;
+}
+
+.left-0{
+    left:0;
+}
+
+.right-0{
+    right:0;
+}
+
+.bottom-0{
+    bottom:0;
+}
+
+/* 13. Z-index Utilities */
+
+.z-navbar{
+    z-index:var(--z-navbar);
+}
+
+.z-modal{
+    z-index:var(--z-modal);
+}
+
+/* 14. Cursor Utilities */
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+/*
+========================================
+CHANGE LOG
+
+v1.0
+- Initial layout system
+- Added grid utilities
+- Added flex utilities
+- Added spacing utilities
+
+========================================
+*/
