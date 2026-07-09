@@ -1,0 +1,161 @@
+/*
+========================================
+CampusVerse Typography
+Version : 1.0
+Author : Raunak Raj
+========================================
+*/
+
+/* 1. Body Typography */
+
+body{
+    font-family:var(--font-family);
+    font-size:var(--fs-md);
+    font-weight:var(--font-regular);
+}
+
+/* 2. Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color:var(--secondary-color);
+    font-weight:var(--font-bold);
+    line-height:1.2;
+}
+
+h1{
+    font-size:var(--fs-5xl);
+}
+h2{
+    font-size:var(--fs-4xl);
+}
+h3{
+    font-size:var(--fs-3xl);
+}
+h4{
+    font-size:var(--fs-2xl);
+}
+h5{
+    font-size:var(--fs-xl);
+}
+h6{
+    font-size:var(--fs-lg);
+}
+
+/* 3. Paragraph */
+
+p{
+    color:var(--text-secondary);
+}
+
+/* 4. Links */
+
+a{
+    color:inherit;
+}
+
+/* 5. Strong & Emphasis */
+
+strong{
+    font-weight:var(--font-bold);
+}
+
+em{
+    font-style:italic;
+}
+
+/* 6. Small Text */
+
+small{
+    font-size:var(--fs-sm);
+}
+
+/* 7. Code */
+
+code{
+    font-family:monospace;
+    font-size:0.9em;
+    background:var(--background-color);
+    padding:0.15em 0.35em;
+    border-radius:var(--radius-sm);
+    overflow-wrap:break-word;
+}
+
+/* 8. Text Utilities */
+
+.text-center{
+    text-align:center;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.fw-bold{
+    font-weight:var(--font-bold);
+}
+
+.fw-medium{
+    font-weight:var(--font-medium);
+}
+
+.text-primary{
+    color:var(--text-primary);
+}
+
+.text-secondary{
+    color:var(--text-secondary);
+}
+
+.text-uppercase{
+    text-transform:uppercase;
+}
+
+.text-capitalize{
+    text-transform:capitalize;
+}
+
+.text-lowercase{
+    text-transform:lowercase;
+}
+
+.fw-regular{
+    font-weight:var(--font-regular);
+}
+
+.fw-semibold{
+    font-weight:var(--font-semibold);
+}
+
+.heading-tight{
+    letter-spacing:-0.03em;
+}
+
+.text-nowrap{
+    white-space:nowrap;
+}
+
+.fw-light{
+    font-weight:var(--font-light);
+}
+
+
+/*
+========================================
+CHANGE LOG
+
+v1.1
+- Added text utilities
+- Improved heading hierarchy
+
+
+========================================
+*/

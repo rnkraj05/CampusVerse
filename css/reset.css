@@ -1,0 +1,131 @@
+/*
+========================================
+CampusVerse Reset CSS
+Version : 1.0
+Author : Raunak Raj
+========================================
+*/
+
+/* 1. Universal Reset */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+::selection{
+    background: var(--primary-color);
+    color: var(--surface-color);
+}
+
+:focus-visible{
+    outline:2px solid var(--primary-color);
+    outline-offset:2px;
+}
+
+/* 2. HTML & Body */
+
+html{
+    scroll-behavior:smooth;
+    font-size:100%;
+}
+
+body{
+    min-height:100vh;
+    font-family:var(--font-family);
+    background:var(--background-color);
+    color:var(--text-primary);
+    line-height:1.6;
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* 3. Media Elements */
+
+img,
+picture,
+svg,
+video{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+video{
+    max-width:100%;
+    display:block;
+}
+
+/* 4. Lists */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* 5. Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* 6. Buttons */
+
+button{
+    border:none;
+    background:none;
+    cursor:pointer;
+    font:inherit;
+}
+a,
+button{
+    transition:var(--transition-normal);
+}
+
+/* 7. Inputs */
+
+input,
+textarea,
+select,
+button{
+    font:inherit;
+}
+
+textarea{
+    resize:vertical;
+}
+
+/* 8. Tables */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* 9. Utility */
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+@media (prefers-reduced-motion: reduce){
+
+    html{
+        scroll-behavior:auto !important;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:0.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:0.01ms !important;
+    }
+
+}

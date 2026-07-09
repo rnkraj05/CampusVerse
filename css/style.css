@@ -1,0 +1,28 @@
+/*
+========================================
+CampusVerse Main Stylesheet
+Version : 1.0
+Author : Raunak Raj
+========================================
+*/
+
+/* Design Tokens */
+@import url("variables.css");
+
+/* Reset */
+@import url("reset.css");
+
+/* Typography */
+@import url("typography.css");
+
+/* Layout */
+@import url("layout.css");
+
+/* Components */
+@import url("components.css");
+
+/* Page Specific */
+@import url("pages.css");
+
+/* Responsive */
+@import url("responsive.css");
