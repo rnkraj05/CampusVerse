@@ -1,0 +1,338 @@
+/*
+========================================
+CampusVerse Pages
+Version : 1.0
+Author : Raunak Raj
+========================================
+*/
+
+/* ========================================
+   HOME PAGE
+======================================== */
+
+/* 1. Hero Section */
+
+.hero{
+    position:relative;
+}
+
+.hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.1fr 0.9fr;
+
+    align-items:center;
+
+    gap:var(--space-8);
+
+}
+
+.hero-content{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    gap:var(--space-4);
+
+}
+
+.hero-visual{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:500px;
+
+    position:relative;
+
+}
+
+/* 2. Typography Section  */
+
+.hero-badge{
+    margin-bottom:var(--space-2);
+}
+
+.hero-heading{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-2);
+}
+
+.hero-heading h1{
+    font-size:var(--fs-4xl);
+    font-weight:var(--font-bold);
+    line-height:1.1;
+    color:var(--secondary-color);
+}
+
+.hero-heading h1 span{
+    display:block;
+}
+
+.hero-heading p{
+
+    font-size:var(--fs-xl);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+    max-width:32rem;
+
+}
+
+.hero-description p{
+
+    font-size:var(--fs-lg);
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    max-width:40rem;
+
+}
+
+/* 3. Hero Search  */
+
+.hero-search{
+    width:100%;
+    max-width:700px;
+    margin-top:var(--space-2);
+}
+
+.search-form{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:var(--space-4);
+    width:100%;
+}
+
+.search-form .input{
+
+    flex:1;
+
+}
+
+.search-form .btn{
+
+    flex-shrink:0;
+
+    min-width:160px;
+
+}
+
+/* 4. Hero CTA */
+
+.hero-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-3);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-2);
+
+}
+
+.hero-actions .btn{
+
+    min-width:180px;
+
+    /* padding-block:1rem;  */
+
+}
+
+/* 5. Hero Stats */
+
+.hero-stats{
+
+    display:flex;
+
+    gap:var(--space-6);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-4);
+
+}
+
+.stat-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-width:100px;
+
+    gap:var(--space-1);
+
+}
+
+.stat-number{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-bold);
+
+    color:var(--primary-color);
+
+    line-height:1;
+
+}
+
+.stat-label{
+
+    font-size:var(--fs-sm);
+
+    color:var(--text-secondary);
+
+    font-weight:var(--font-medium);
+
+}
+
+/* 6. Hero Visual */
+
+.visual-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:500px;
+
+    aspect-ratio:1/1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-illustration{
+    width:100%;
+    height:100%;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.hero-image{
+
+    width:100%;
+
+    max-width:480px;
+
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+
+    position:relative;
+    z-index:1;
+
+}
+
+
+/* Temporary Placeholder */
+.illustration-placeholder{
+    width:80%;
+    aspect-ratio:1/1;
+
+    border:2px dashed var(--border-color);
+    border-radius:var(--radius-xl);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:var(--text-secondary);
+    background:var(--surface-color);
+
+    overflow:hidden;
+}
+
+
+/* 7. Floating Cards */
+
+.floating-card{
+    position:absolute;
+
+    background:var(--surface-color);
+
+    border-radius:var(--radius-lg);
+
+    padding:var(--space-3);
+
+    box-shadow:var(--shadow-md);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+
+    min-width:120px;
+
+    z-index:2;
+    will-change: transform;
+    animation:float 4s ease-in-out infinite;
+    
+}
+
+.card-learning{
+    top:16%;
+    left:6%;
+    animation-delay:0s;
+}
+
+.card-projects{
+    bottom:14%;
+    left:10%;
+    animation-delay:1s;
+}
+
+.card-career{
+    top:28%;
+    right:0;
+    animation-delay:2s;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+
+    .floating-card{
+        animation:none;
+    }
+
+}
+
