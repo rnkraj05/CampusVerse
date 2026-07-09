@@ -1,0 +1,383 @@
+/*
+========================================
+CampusVerse Components
+Version : 1.0
+Author : Raunak Raj
+========================================
+*/
+
+/* 1. Buttons */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+
+    white-space:nowrap;
+    user-select:none;
+    border:1px solid transparent;
+
+    text-align:center;
+
+    padding:0.75rem 1.5rem;
+
+    border-radius:var(--radius-md);
+
+    font-size:var(--fs-md);
+    font-weight:var(--font-medium);
+
+    cursor:pointer;
+
+    transition:var(--transition-normal);
+}
+
+.btn-primary{
+    background:var(--primary-color);
+    color:var(--surface-color);
+}
+
+.btn-primary:hover{
+    opacity:0.9;
+}
+
+.btn-secondary{
+    background:var(--secondary-color);
+    color:var(--surface-color);
+}
+
+.btn-outline{
+    background:transparent;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+}
+
+.btn-outline:hover{
+    background:var(--primary-color);
+    color:var(--surface-color);
+}
+
+.btn-ghost{
+    background:transparent;
+    color:var(--primary-color);
+}
+
+.btn-ghost:hover{
+    background:rgba(37,99,235,0.08);
+}
+
+.btn:focus-visible{
+    outline:2px solid var(--primary-color);
+}
+
+.btn:disabled{
+    opacity:0.6;
+    cursor:not-allowed;
+}
+
+.btn-sm{
+    padding:0.5rem 1rem;
+    font-size:var(--fs-sm);
+}
+
+.btn-lg{
+    padding:1rem 2rem;
+    font-size:var(--fs-lg);
+}
+
+/* 2. Badges */
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:0.25rem;
+
+    white-space:nowrap;
+
+    padding:0.25rem 0.75rem;
+
+    border-radius:999px;
+
+    font-size:var(--fs-sm);
+    font-weight:var(--font-medium);
+}
+
+.badge-success{
+    background:var(--success-color);
+    color:var(--surface-color);
+}
+
+.badge-warning{
+    background:var(--warning-color);
+    color:var(--surface-color);
+}
+
+.badge-danger{
+    background:var(--danger-color);
+    color:var(--surface-color);
+}
+
+/* 3. Cards */
+
+.card{
+    background:var(--surface-color);
+
+    border-radius:var(--radius-lg);
+
+    padding:var(--space-4);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition-normal);
+
+    overflow:hidden;
+}
+
+.card:hover{
+    box-shadow:var(--shadow-md);
+}
+
+/* 4. Inputs */
+
+.input{
+    width:100%;
+
+    padding:0.75rem 1rem;
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-md);
+
+    background:var(--surface-color);
+
+    color:var(--text-primary);
+
+    font-size:var(--fs-md);
+
+    transition:var(--transition-normal);
+}
+
+.input::placeholder{
+    color:var(--text-secondary);
+}
+
+.input:hover{
+    border-color:var(--primary-color);
+}
+
+.input:focus{
+    outline:none;
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+
+.input:disabled{
+    background:var(--background-color);
+    cursor:not-allowed;
+    opacity:0.7;
+}
+
+.textarea{
+    min-height:120px;
+}
+
+.select{
+    width:100%;
+}
+
+/* Future:
+Input with Icon
+*/
+
+/* 5. Forms */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+
+    gap:var(--space-2);
+}
+
+.label{
+    color:var(--text-primary);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+}
+
+.form{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+}
+
+.helper-text{
+    color:var(--text-secondary);
+
+    font-size:var(--fs-sm);
+}
+
+.error-text{
+    color:var(--danger-color);
+
+    font-size:var(--fs-sm);
+}
+
+.success-text{
+    color:var(--success-color);
+
+    font-size:var(--fs-sm);
+}
+
+
+/* 6. Navigation */
+
+/* 7. Footer */
+
+/* 8. Modal */
+
+.modal{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,0.5);
+
+    z-index:var(--z-modal);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:var(--transition-normal);
+}
+
+.modal.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.modal-content{
+    width:90%;
+    max-width:500px;
+
+    background:var(--surface-color);
+
+    border-radius:var(--radius-lg);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-lg);
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:var(--space-4);
+}
+
+.modal-body{
+    margin-bottom:var(--space-4);
+}
+
+.modal-footer{
+    display:flex;
+    justify-content:flex-end;
+    gap:var(--space-3);
+}
+
+/* 9. Progress */
+
+.progress{
+    width:100%;
+
+    height:8px;
+
+    background:var(--border-color);
+
+    border-radius:999px;
+
+    overflow:hidden;
+}
+
+.progress-bar{
+    width:0%;
+
+    height:100%;
+
+    background:var(--primary-color);
+
+    transition:var(--transition-normal);
+}
+
+/* 10. Loader */
+
+.loader{
+    width:40px;
+    height:40px;
+
+    border:4px solid var(--border-color);
+
+    border-top-color:var(--primary-color);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* 11. Component Utilities */
+
+.btn-block{
+    width:100%;
+}
+
+.card-flat{
+    box-shadow:none;
+}
+
+.card-rounded{
+    border-radius:var(--radius-xl);
+}
+
+.is-disabled{
+    pointer-events:none;
+    opacity:0.6;
+}
+
+.is-hidden{
+    display:none;
+}
+
+/*
+========================================
+CHANGE LOG
+
+v1.0
+- Added reusable button system
+- Added form components
+- Added modal component
+- Added progress component
+- Added loader component
+
+========================================
+*/
