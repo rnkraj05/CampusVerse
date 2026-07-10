@@ -1094,3 +1094,213 @@ Author : Raunak Raj
     }
 
 }
+
+
+
+/* ========================================
+   24. Practice Hub
+======================================== */
+
+.practice-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   25. Practice Card
+======================================== */
+
+.practice-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   26. Practice Icon
+======================================== */
+
+.practice-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+.practice-card:hover .practice-icon{
+
+    transform:scale(1.15);
+
+}
+
+
+/* ========================================
+   27. Practice Typography
+======================================== */
+
+.practice-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+}
+
+.practice-content h3{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.3;
+
+}
+
+.practice-content p{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+
+/* ========================================
+   28. Practice Hover Effects
+======================================== */
+
+.practice-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--primary-color);
+
+}
+
+.practice-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+
+/* ========================================
+   29. Practice Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .practice-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .practice-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .practice-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .practice-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   30. Practice Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .practice-card{
+
+        transition:none;
+
+    }
+
+    .practice-card:hover{
+
+        transform:none;
+
+    }
+
+    .practice-icon{
+
+        transition:none;
+
+    }
+
+}
