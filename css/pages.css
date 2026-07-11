@@ -255,7 +255,7 @@ Author : Raunak Raj
 }
 
 
-/* Temporary Placeholder */
+/* 7. Temporary Placeholder */
 .illustration-placeholder{
     width:80%;
     aspect-ratio:1/1;
@@ -274,7 +274,7 @@ Author : Raunak Raj
 }
 
 
-/* 7. Floating Cards */
+/* 8. Floating Cards */
 
 .floating-card{
     position:absolute;
@@ -339,7 +339,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   8. Features Section
+   9. Features Section
 ======================================== */
 
 .features-grid{
@@ -354,7 +354,7 @@ Author : Raunak Raj
 
 }
 
-/* 9. Feature Card */
+/* 10. Feature Card */
 
 .feature-card{
 
@@ -379,7 +379,7 @@ Author : Raunak Raj
 }
 
 
-/* 10. Feature Card Typography */
+/* 11. Feature Card Typography */
 
 .feature-icon{
 
@@ -451,7 +451,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   Features Responsive
+  12. Features Responsive
 ======================================== */
 
 @media (max-width:992px){
@@ -488,7 +488,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   11. Learning Journey
+   13. Learning Journey
 ======================================== */
 
 .journey-grid{
@@ -504,7 +504,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   12. Journey Step Card
+   14. Journey Step Card
 ======================================== */
 
 .journey-step{
@@ -554,7 +554,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   13. Journey Number
+   15. Journey Number
 ======================================== */
 
 .step-number{
@@ -578,7 +578,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   14. Journey Icon
+   16. Journey Icon
 ======================================== */
 
 .step-icon{
@@ -610,7 +610,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   15. Journey Typography
+   17. Journey Typography
 ======================================== */
 
 .step-content{
@@ -647,7 +647,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   Learning Journey Responsive
+   18. Learning Journey Responsive
 ======================================== */
 
 @media (max-width:992px){
@@ -699,7 +699,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   16. Skills Preview
+   19. Skills Preview
 ======================================== */
 
 .skills-grid{
@@ -715,7 +715,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   17. Skill Card
+   20. Skill Card
 ======================================== */
 
 .skill-card{
@@ -748,7 +748,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   18. Skill Icon
+   21. Skill Icon
 ======================================== */
 
 .skill-icon{
@@ -774,7 +774,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   19. Skill Typography
+   22. Skill Typography
 ======================================== */
 
 .skill-content{
@@ -810,7 +810,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   20. Skill Hover Effects
+   23. Skill Hover Effects
 ======================================== */
 
 .skill-card:hover{
@@ -838,7 +838,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   Skills Responsive
+   24. Skills Responsive
 ======================================== */
 
 @media (max-width:992px){
@@ -862,7 +862,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   Skills Reduced Motion
+   25. Skills Reduced Motion
 ======================================== */
 
 @media (prefers-reduced-motion:reduce){
@@ -883,7 +883,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   18. Resource Center
+   26. Resource Center
 ======================================== */
 
 .resource-grid{
@@ -900,7 +900,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   19. Resource Card
+   27. Resource Card
 ======================================== */
 
 .resource-card{
@@ -927,7 +927,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   20. Resource Icon
+   28. Resource Icon
 ======================================== */
 
 .resource-icon{
@@ -954,7 +954,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   21. Resource Typography
+   29. Resource Typography
 ======================================== */
 
 .resource-content{
@@ -993,7 +993,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   22. Resource Hover Effects
+   30. Resource Hover Effects
 ======================================== */
 
 .resource-card{
@@ -1033,7 +1033,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   Resource Responsive
+   31. Resource Responsive
 ======================================== */
 
 @media (max-width:992px){
@@ -1069,7 +1069,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   Resource Reduced Motion
+   32. Resource Reduced Motion
 ======================================== */
 
 
@@ -1098,7 +1098,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   24. Practice Hub
+   33. Practice Hub
 ======================================== */
 
 .practice-grid{
@@ -1115,7 +1115,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   25. Practice Card
+   34. Practice Card
 ======================================== */
 
 .practice-card{
@@ -1149,7 +1149,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   26. Practice Icon
+   35. Practice Icon
 ======================================== */
 
 .practice-icon{
@@ -1182,7 +1182,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   27. Practice Typography
+   36. Practice Typography
 ======================================== */
 
 .practice-content{
@@ -1219,7 +1219,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   28. Practice Hover Effects
+   37. Practice Hover Effects
 ======================================== */
 
 .practice-card:hover{
@@ -1243,7 +1243,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   29. Practice Responsive
+   38. Practice Responsive
 ======================================== */
 
 @media (max-width:992px){
@@ -1280,7 +1280,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   30. Practice Reduced Motion
+   39. Practice Reduced Motion
 ======================================== */
 
 @media (prefers-reduced-motion:reduce){
@@ -1307,7 +1307,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   31. Build Hub
+   40. Build Hub
 ======================================== */
 
 .build-grid{
@@ -1323,7 +1323,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   32. Build Card
+   41. Build Card
 ======================================== */
 
 .build-card{
@@ -1349,7 +1349,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-  33. Build Icon
+  42. Build Icon
 ======================================== */
 
 .build-icon{
@@ -1375,7 +1375,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-  34. Build Typography
+  43. Build Typography
 ======================================== */
 
 .build-content{
@@ -1411,7 +1411,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   35. Build Hover Effects
+   44. Build Hover Effects
 ======================================== */
 
 .build-card{
@@ -1451,7 +1451,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-  36. Build Responsive
+  45. Build Responsive
 ======================================== */
 
 @media (max-width:992px){
@@ -1487,7 +1487,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-  37. Build Reduced Motion
+  46. Build Reduced Motion
 ======================================== */
 
 @media (prefers-reduced-motion:reduce){
@@ -1513,7 +1513,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   38. Career Grid
+   47. Career Grid
 ======================================== */
 
 .career-grid{
@@ -1529,7 +1529,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   39. Career Card
+   48. Career Card
 ======================================== */
 
 .career-card{
@@ -1546,6 +1546,8 @@ Author : Raunak Raj
 
     flex-direction:column;
 
+    height: 100%;
+
     gap:var(--space-3);
 
     cursor:pointer;
@@ -1553,7 +1555,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   40. Career Icon
+   49. Career Icon
 ======================================== */
 
 .career-icon{
@@ -1579,7 +1581,7 @@ Author : Raunak Raj
 }
 
 /* ========================================
-   41. Career Typography
+   50. Career Typography
 ======================================== */
 
 .career-content{
@@ -1616,7 +1618,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   42. Career Hover Effects
+   51. Career Hover Effects
 ======================================== */
 
 .career-card{
@@ -1656,7 +1658,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   43. Career Responsive
+   52. Career Responsive
 ======================================== */
 
 @media (max-width:992px){
@@ -1693,7 +1695,7 @@ Author : Raunak Raj
 
 
 /* ========================================
-   44. Career Reduced Motion
+   53. Career Reduced Motion
 ======================================== */
 
 @media (prefers-reduced-motion:reduce){
@@ -1713,6 +1715,332 @@ Author : Raunak Raj
     .career-icon{
 
         transition:none;
+
+    }
+
+}
+
+/* ========================================
+   54. Opportunity Hub
+======================================== */
+
+.opportunity-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-5);
+
+    margin-top: var(--space-7);
+}
+
+/* ========================================
+   55. Opportunity Card
+======================================== */
+
+.opportunity-card{
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-xl);
+
+    padding: var(--space-5);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-3);
+
+    height: 100%;
+
+    cursor: pointer;
+
+}
+
+/* ========================================
+   56. Opportunity Icon
+======================================== */
+
+.opportunity-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   57. Opportunity Typography
+======================================== */
+
+.opportunity-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+}
+
+.opportunity-content h3{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.3;
+
+}
+
+.opportunity-content p{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+/* ========================================
+   58. Opportunity Hover Effects
+======================================== */
+
+.opportunity-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.opportunity-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--primary-color);
+
+}
+
+.opportunity-card:hover .opportunity-icon{
+
+    transform:scale(1.15);
+
+}
+
+.opportunity-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   59. Opportunity Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .opportunity-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .opportunity-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .opportunity-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .opportunity-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   60. Opportunity Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .opportunity-card{
+
+        transition:none;
+
+    }
+
+    .opportunity-card:hover{
+
+        transform:none;
+
+    }
+
+    .opportunity-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   61. CTA Wrapper
+======================================== */
+
+.cta-wrapper{
+    text-align: center;
+}
+
+/* ========================================
+   62. CTA Card
+======================================== */
+
+.cta-wrapper{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-2xl);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ========================================
+   63. CTA Actions
+======================================== */
+
+.cta-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-3);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-5);
+
+}
+
+.cta-actions .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   64. CTA Hover
+======================================== */
+
+.cta-wrapper{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.cta-wrapper:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   65. CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .cta-wrapper{
+
+        padding:var(--space-5);
+
+    }
+
+    .cta-actions{
+
+        flex-direction:column;
+
+    }
+
+    .cta-actions .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ========================================
+   66. CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .cta-wrapper{
+
+        transition:none;
+
+    }
+
+    .cta-wrapper:hover{
+
+        transform:none;
 
     }
 
