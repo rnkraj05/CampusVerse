@@ -2045,3 +2045,253 @@ Author : Raunak Raj
     }
 
 }
+
+
+/* ========================================
+   67. Footer
+======================================== */
+
+.footer{
+
+    background: var(--surface-color);
+
+    border-top:1px solid var(--border-color);
+
+    margin-top:var(--space-10);
+
+}
+
+.footer-wrapper {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: var(--space-8);
+
+    padding: var(--space-9) 0;
+
+}
+
+/* ========================================
+   68. Footer Brand
+======================================== */
+
+.footer-brand{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+}
+
+.footer-logo{
+
+    font-size:var(--fs-xl);
+
+    font-weight:var(--font-bold);
+
+    color:var(--secondary-color);
+
+    text-decoration:none;
+
+}
+
+.footer-description{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    max-width:300px;
+
+}
+
+
+/* ========================================
+   69. Footer Social
+======================================== */
+
+.footer-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-3);
+
+    flex-wrap:wrap;
+
+}
+
+.footer-social a{
+
+    text-decoration:none;
+
+    color:var(--text-secondary);
+
+    font-size:var(--fs-sm);
+
+    transition:color .3s ease;
+
+}
+
+.footer-social a:hover{
+
+    color:var(--primary-color);
+
+}
+
+/* ========================================
+   70. Footer Links
+======================================== */
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+
+}
+
+.footer-links h3{
+
+    font-size:var(--fs-xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+}
+
+/* ========================================
+   71. Footer Links
+======================================== */
+
+.footer-links ul{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-links li{
+
+    list-style:none;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:var(--text-secondary);
+
+    font-size:var(--fs-md);
+
+    transition:color .3s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--primary-color);
+
+}
+
+/* ========================================
+   72. Footer Bottom
+======================================== */
+
+.footer-bottom{
+
+    border-top:1px solid var(--border-color);
+
+    padding:var(--space-5) 0;
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    font-size:var(--fs-sm);
+
+    color:var(--text-secondary);
+
+}
+
+/* ========================================
+   73. Footer Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .footer-wrapper{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .footer-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:var(--space-6);
+
+    }
+
+    .footer-brand{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .footer-links{
+
+        text-align:center;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ========================================
+   74. Footer Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .footer-social a{
+
+        transition:none;
+
+    }
+
+}
