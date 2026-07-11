@@ -1304,3 +1304,416 @@ Author : Raunak Raj
     }
 
 }
+
+
+/* ========================================
+   31. Build Hub
+======================================== */
+
+.build-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   32. Build Card
+======================================== */
+
+.build-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+  33. Build Icon
+======================================== */
+
+.build-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+  34. Build Typography
+======================================== */
+
+.build-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+}
+
+.build-content h3{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.3;
+
+}
+
+.build-content p{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+/* ========================================
+   35. Build Hover Effects
+======================================== */
+
+.build-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.build-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--primary-color);
+
+}
+
+.build-card:hover .build-icon{
+
+    transform:scale(1.15);
+
+}
+
+.build-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+  36. Build Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .build-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .build-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .build-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .build-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+  37. Build Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .build-card{
+
+        transition:none;
+
+    }
+
+    .build-card:hover{
+
+        transform:none;
+
+    }
+
+    .build-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   38. Career Grid
+======================================== */
+
+.career-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   39. Career Card
+======================================== */
+
+.career-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   40. Career Icon
+======================================== */
+
+.career-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   41. Career Typography
+======================================== */
+
+.career-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+}
+
+.career-content h3{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.3;
+
+}
+
+.career-content p{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+
+/* ========================================
+   42. Career Hover Effects
+======================================== */
+
+.career-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.career-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--primary-color);
+
+}
+
+.career-card:hover .career-icon{
+
+    transform:scale(1.15);
+
+}
+
+.career-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   43. Career Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .career-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .career-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .career-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .career-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   44. Career Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .career-card{
+
+        transition:none;
+
+    }
+
+    .career-card:hover{
+
+        transform:none;
+
+    }
+
+    .career-icon{
+
+        transition:none;
+
+    }
+
+}
