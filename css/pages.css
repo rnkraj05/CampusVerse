@@ -2295,3 +2295,703 @@ Author : Raunak Raj
     }
 
 }
+
+
+/* ========================================
+   LEARNING HUB
+======================================== */
+
+/* ========================================
+   75. Learning Hero
+======================================== */
+
+.learning-hero{
+
+    position:relative;
+
+}
+
+.learning-hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+
+}
+
+
+/* ========================================
+   76. Learning Hero Typography
+======================================== */
+
+.learning-hero-content h1{
+
+    font-size:var(--fs-4xl);
+
+    font-weight:var(--font-bold);
+
+    line-height:1.1;
+
+    color:var(--secondary-color);
+
+    max-width:12ch;
+
+}
+
+.learning-hero-content p{
+
+    font-size:var(--fs-lg);
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    max-width:42rem;
+
+}
+
+
+/* ========================================
+   77. Learning Hero Spacing
+======================================== */
+
+.learning-hero{
+
+    padding:var(--space-10) 0;
+
+}
+
+.learning-hero-content{
+
+    max-width:700px;
+
+}
+
+/* ========================================
+   78. Learning Categories
+======================================== */
+
+.learning-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+.learning-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   79. Learning Card
+======================================== */
+
+.learning-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   80. Learning Icon
+======================================== */
+
+.learning-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   81. Learning Card Typography
+======================================== */
+
+.learning-card h3{
+
+    font-size:var(--fs-3xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.2;
+
+}
+
+.learning-card p{
+
+    font-size:var(--fs-base);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    flex:1;
+
+}
+
+.learning-card a{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   82. Learning Card Hover
+======================================== */
+
+.learning-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.learning-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.learning-card:hover .learning-icon{
+
+    transform:scale(1.1);
+
+}
+
+
+/* ========================================
+   83. Featured Courses
+======================================== */
+
+.featured-courses{
+
+    padding:var(--space-10) 0;
+
+}
+
+.featured-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   84. Featured Course Card
+======================================== */
+
+.featured-course-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   85. Featured Icon
+======================================== */
+
+.featured-course-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   86. Featured Course Typography
+======================================== */
+
+.featured-course-card h3{
+
+    font-size:var(--fs-3xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.2;
+
+}
+
+.featured-course-card p{
+
+    font-size:var(--fs-base);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    flex:1;
+
+}
+
+.course-level{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--primary-color);
+
+}
+
+.featured-course-card a{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   87. Featured Course Hover
+======================================== */
+
+.featured-course-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.featured-course-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.featured-course-card:hover .featured-course-icon{
+
+    transform:scale(1.1);
+
+}
+
+
+/* ========================================
+   88. Learning Tracks
+======================================== */
+
+.learning-tracks{
+
+    padding:var(--space-10) 0 var(--space-14);
+
+}
+
+.tracks-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   89. Track Card
+======================================== */
+
+.track-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   90. Track Icon
+======================================== */
+
+.track-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   91. Track Typography
+======================================== */
+
+.track-card h3{
+
+    font-size:var(--fs-3xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.2;
+
+}
+
+.track-card p{
+
+    font-size:var(--fs-base);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    flex:1;
+
+}
+
+.track-duration{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--primary-color);
+
+}
+
+.track-card a{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   92. Track Hover
+======================================== */
+
+.track-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.track-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.track-card:hover .track-icon{
+
+    transform:scale(1.1);
+
+}
+
+/* ========================================
+   93. Learning CTA
+======================================== */
+
+.learning-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+.learning-cta .cta-wrapper{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-9);
+
+}
+
+
+/* ========================================
+   94. Learning CTA Content
+======================================== */
+
+.learning-cta .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+.learning-cta h2{
+
+    font-size:var(--fs-4xl);
+
+    font-weight:var(--font-bold);
+
+    color:var(--secondary-color);
+
+    line-height:1.2;
+
+    margin-bottom:var(--space-3);
+
+}
+
+.learning-cta p{
+
+    font-size:var(--fs-lg);
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    max-width:42rem;
+
+    margin:0 auto;
+
+}
+
+
+/* ========================================
+   95. Learning CTA Buttons
+======================================== */
+
+.learning-cta .cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    margin-top:var(--space-6);
+
+    flex-wrap:wrap;
+
+}
+
+.learning-cta .cta-wrapper{
+
+    text-align:center;
+
+}
+
+
+/* ========================================
+   96. Learning Hub Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .learning-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .featured-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .tracks-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .learning-hero{
+
+        padding:var(--space-8) 0;
+
+    }
+
+    .learning-hero-content h1{
+
+        font-size:var(--fs-3xl);
+
+        max-width:none;
+
+    }
+
+    .learning-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .featured-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .learning-card,
+    .featured-course-card,
+    .track-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .learning-card h3,
+    .featured-course-card h3,
+    .track-card h3{
+
+        font-size:var(--fs-2xl);
+
+    }
+
+    .learning-cta{
+
+        padding:var(--space-8) 0;
+
+    }
+
+}
