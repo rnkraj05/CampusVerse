@@ -3960,5 +3960,990 @@ Author : Raunak Raj
 }
 
 
+/* ========================================
+   134. Build Hero
+======================================== */
 
+.build-hero{
+
+    position:relative;
+
+    padding:var(--space-12) 0 var(--space-10);
+
+}
+
+.build-hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+
+}
+
+/* ========================================
+   135. Build Hero Typography
+======================================== */
+
+.build-hero-content h1{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    line-height:1.1;
+
+    max-width:14ch;
+
+}
+
+.build-hero-content p{
+
+    max-width:68ch;
+
+}
+
+/* ========================================
+   136. Project Categories
+======================================== */
+
+.project-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   137. Build Grid
+======================================== */
+
+.build-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   138. Build Card
+======================================== */
+
+.build-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ========================================
+   139. Build Icon
+======================================== */
+
+.build-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   140. Build Typography
+======================================== */
+
+.build-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.build-content h3{
+
+    margin:0;
+
+}
+
+.build-content p{
+
+    flex:1;
+
+}
+
+/* ========================================
+   141. Build Hover
+======================================== */
+
+.build-card{
+
+    transition:
+
+        transform .3s ease,
+
+        box-shadow .3s ease,
+
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.build-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.build-card:hover .build-icon{
+
+    transform:scale(1.1);
+
+}
+
+.build-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   142. Guided Projects
+======================================== */
+
+.guided-projects{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   143. Guided Grid
+======================================== */
+
+.guided-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   144. Guided Card
+======================================== */
+
+.guided-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   145. Guided Icon
+======================================== */
+
+.guided-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   146. Guided Typography
+======================================== */
+
+.guided-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.guided-content h3{
+
+    margin:0;
+
+}
+
+.guided-content p{
+
+    flex:1;
+
+}
+
+.project-level{
+
+    font-size:var(--fs-sm);
+
+    color:var(--text-secondary);
+
+    font-weight:var(--font-medium);
+
+}
+
+.guided-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+}
+
+/* ========================================
+   147. Guided Hover
+======================================== */
+
+.guided-card{
+
+    transition:
+
+        transform .3s ease,
+
+        box-shadow .3s ease,
+
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.guided-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.guided-card:hover .guided-icon{
+
+    transform:scale(1.1);
+
+}
+
+.guided-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   148. Guided Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .guided-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .guided-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .guided-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .guided-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   149. Guided Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .guided-card{
+
+        transition:none;
+
+    }
+
+    .guided-card:hover{
+
+        transform:none;
+
+    }
+
+    .guided-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   150. Portfolio Projects
+======================================== */
+
+.portfolio-projects{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   151. Portfolio Grid
+======================================== */
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   152. Portfolio Card
+======================================== */
+
+.portfolio-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   153. Portfolio Icon
+======================================== */
+
+.portfolio-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   154. Portfolio Typography
+======================================== */
+
+.portfolio-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.portfolio-content h3{
+
+    margin:0;
+
+}
+
+.portfolio-content p{
+
+    flex:1;
+
+}
+
+.project-stack{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.portfolio-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+}
+
+/* ========================================
+   155. Portfolio Hover
+======================================== */
+
+.portfolio-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.portfolio-card:hover .portfolio-icon{
+
+    transform:scale(1.1);
+
+}
+
+.portfolio-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   156. Portfolio Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .portfolio-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .portfolio-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .portfolio-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .portfolio-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   157. Portfolio Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .portfolio-card{
+
+        transition:none;
+
+    }
+
+    .portfolio-card:hover{
+
+        transform:none;
+
+    }
+
+    .portfolio-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   158. Open Source Journey
+======================================== */
+
+.open-source{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   159. Open Source Grid
+======================================== */
+
+.opensource-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   160. Open Source Card
+======================================== */
+
+.opensource-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   161. Open Source Icon
+======================================== */
+
+.opensource-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   162. Open Source Typography
+======================================== */
+
+.opensource-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.opensource-content h3{
+
+    margin:0;
+
+}
+
+.opensource-content p{
+
+    flex:1;
+
+}
+
+.opensource-level{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.opensource-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+}
+
+/* ========================================
+   163. Open Source Hover
+======================================== */
+
+.opensource-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.opensource-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.opensource-card:hover .opensource-icon{
+
+    transform:scale(1.1);
+
+}
+
+.opensource-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   164. Open Source Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .opensource-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .opensource-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .opensource-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .opensource-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   165. Open Source Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .opensource-card{
+
+        transition:none;
+
+    }
+
+    .opensource-card:hover{
+
+        transform:none;
+
+    }
+
+    .opensource-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   166. Build CTA
+======================================== */
+
+.build-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   167. Build CTA Wrapper
+======================================== */
+
+.build-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-2xl);
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.build-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   168. Build CTA Typography
+======================================== */
+
+.build-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.build-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.build-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+
+/* ========================================
+   169. Build CTA Buttons
+======================================== */
+
+.build-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.build-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   170. Build CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .build-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .build-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .build-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ========================================
+   171. Build CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .build-cta-content{
+
+        transition:none;
+
+    }
+
+    .build-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
 
