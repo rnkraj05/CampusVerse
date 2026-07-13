@@ -2061,7 +2061,7 @@ Author : Raunak Raj
 
 }
 
-.footer-wrapper {
+.footer-grid {
 
     display: grid;
 
@@ -2242,7 +2242,7 @@ Author : Raunak Raj
 
 @media (max-width:992px){
 
-    .footer-wrapper{
+    .footer-grid{
 
         grid-template-columns:repeat(2,1fr);
 
@@ -2252,7 +2252,7 @@ Author : Raunak Raj
 
 @media (max-width:768px){
 
-    .footer-wrapper{
+    .footer-grid{
 
         grid-template-columns:1fr;
 
@@ -2995,3 +2995,970 @@ Author : Raunak Raj
     }
 
 }
+
+
+/* ========================================
+   PRACTICE HUB
+======================================== */
+
+/* ========================================
+   97. Practice Hero
+======================================== */
+
+.practice-hero{
+
+    position:relative;
+
+}
+
+.practice-hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+
+}
+
+/* ========================================
+   98. Practice Hero Typography
+======================================== */
+
+.practice-hero-content h1{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    line-height:1.1;
+
+    max-width:17ch;
+
+}
+
+.practice-hero-content p{
+
+    max-width:60ch;
+
+}
+
+/* ========================================
+   99. Practice Hero Spacing
+======================================== */
+
+.practice-hero{
+
+    padding:var(--space-12) 0 var(--space-10);
+
+}
+
+/* ========================================
+   100. Practice Categories
+======================================== */
+
+.practice-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+.practice-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+}
+
+/* ========================================
+   101. Practice Card
+======================================== */
+
+.practice-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ========================================
+   102. Practice Icon
+======================================== */
+
+.practice-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+}
+
+/* ========================================
+   103. Practice Typography
+======================================== */
+
+.practice-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.practice-content h3{
+
+    margin:0;
+
+}
+
+.practice-content p{
+
+    flex:1;
+
+}
+
+/* ========================================
+   104. Practice Hover
+======================================== */
+
+.practice-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.practice-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ========================================
+   105. Daily Challenges
+======================================== */
+
+.daily-challenges{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   106. Challenge Grid
+======================================== */
+
+.challenge-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   107. Challenge Card
+======================================== */
+
+.challenge-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    height:100%;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ========================================
+   108. Challenge Icon
+======================================== */
+
+.challenge-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+}
+
+/* ========================================
+   109. Challenge Typography
+======================================== */
+
+.challenge-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.challenge-content h3{
+
+    margin:0;
+
+}
+
+.challenge-content p{
+
+    flex:1;
+
+}
+
+.challenge-level{
+
+    font-size:var(--fs-sm);
+
+    color:var(--text-secondary);
+
+    font-weight:var(--font-medium);
+
+}
+
+.challenge-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+}
+
+/* ========================================
+   110. Challenge Hover
+======================================== */
+
+.challenge-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.challenge-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.challenge-card:hover .challenge-icon{
+
+    transform:scale(1.1);
+
+}
+
+.challenge-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+.challenge-icon{
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   111. Challenge Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .challenge-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .challenge-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .challenge-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .challenge-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   112. Challenge Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .challenge-card{
+
+        transition:none;
+
+    }
+
+    .challenge-card:hover{
+
+        transform:none;
+
+    }
+
+    .challenge-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   113. Mock Tests
+======================================== */
+
+.mock-tests{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   114. Mock Test Grid
+======================================== */
+
+.mock-test-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   115. Mock Test Card
+======================================== */
+
+.mock-test-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    height:100%;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ========================================
+   116. Mock Test Icon
+======================================== */
+
+.mock-test-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   117. Mock Test Typography
+======================================== */
+
+.mock-test-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.mock-test-content h3{
+
+    margin:0;
+
+}
+
+.mock-test-content p{
+
+    flex:1;
+
+}
+
+.test-duration{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.mock-test-card a{
+
+    text-decoration:none;
+
+    color:var(--primary-color);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+}
+
+/* ========================================
+   118. Mock Test Hover
+======================================== */
+
+.mock-test-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.mock-test-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.mock-test-card:hover .mock-test-icon{
+
+    transform:scale(1.1);
+
+}
+
+.mock-test-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   119. Mock Test Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .mock-test-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .mock-test-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .mock-test-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .mock-test-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   120. Mock Test Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .mock-test-card{
+
+        transition:none;
+
+    }
+
+    .mock-test-card:hover{
+
+        transform:none;
+
+    }
+
+    .mock-test-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   121. Coding Contests
+======================================== */
+
+.coding-contests{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   122. Contest Grid
+======================================== */
+
+.contest-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   123. Contest Card
+======================================== */
+
+.contest-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    height:100%;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ========================================
+   124. Contest Icon
+======================================== */
+
+.contest-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   125. Contest Typography
+======================================== */
+
+.contest-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.contest-content h3{
+
+    margin:0;
+
+}
+
+.contest-content p{
+
+    flex:1;
+
+}
+
+.contest-time{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.contest-card a{
+
+    text-decoration:none;
+
+    color:var(--primary-color);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+}
+
+/* ========================================
+   126. Contest Hover
+======================================== */
+
+.contest-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.contest-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.contest-card:hover .contest-icon{
+
+    transform:scale(1.1);
+
+}
+
+.contest-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   127. Contest Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .contest-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .contest-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contest-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .contest-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   128. Contest Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .contest-card{
+
+        transition:none;
+
+    }
+
+    .contest-card:hover{
+
+        transform:none;
+
+    }
+
+    .contest-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   129. Practice CTA
+======================================== */
+
+.practice-cta{
+
+    padding:var(--space-10) 0;
+}
+
+/* ========================================
+   130. Practice CTA Wrapper
+======================================== */
+
+.practice-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-2xl);
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.practice-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   131. Practice CTA Typography
+======================================== */
+
+.practice-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.practice-cta-content p{
+
+    max-width:58ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.practice-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+/* ========================================
+   132. Practice CTA Buttons
+======================================== */
+
+.practice-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.practice-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   133. Practice CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .practice-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .practice-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .practice-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media (prefers-reduced-motion:reduce){
+
+    .practice-cta-content{
+
+        transition:none;
+
+    }
+
+    .practice-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
+
+
