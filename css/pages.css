@@ -2057,7 +2057,7 @@ Author : Raunak Raj
 
     border-top:1px solid var(--border-color);
 
-    margin-top:var(--space-10);
+    margin-top:var(--space-12);
 
 }
 
@@ -4946,4 +4946,1016 @@ Author : Raunak Raj
     }
 
 }
+
+
+/* ========================================
+   172. Career Hero
+======================================== */
+
+.career-hero{
+
+    position:relative;
+
+    padding:var(--space-12) 0 var(--space-10);
+
+}
+
+.career-hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+
+}
+
+
+/* ========================================
+   173. Career Hero Typography
+======================================== */
+
+.career-hero-content h1{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    line-height:1.1;
+
+    max-width:14ch;
+
+}
+
+.career-hero-content p{
+
+    max-width:68ch;
+
+}
+
+
+/* ========================================
+   174. Career Categories
+======================================== */
+
+.career-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   175. Career Grid
+======================================== */
+
+.career-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   176. Career Card
+======================================== */
+
+.career-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   177. Career Icon
+======================================== */
+
+.career-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   178. Career Typography
+======================================== */
+
+.career-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.career-content h3{
+
+    margin:0;
+
+}
+
+.career-content p{
+
+    flex:1;
+
+}
+
+
+/* ========================================
+   179. Career Hover
+======================================== */
+
+.career-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.career-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.career-card:hover .career-icon{
+
+    transform:scale(1.1);
+
+}
+
+.career-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   180. Career Roadmaps
+======================================== */
+
+.career-roadmaps{
+
+    padding: var(--space-10) 0 var(--space-12);
+
+}
+
+/* ========================================
+   181. Roadmap Grid
+======================================== */
+
+.roadmap-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   182. Roadmap Card
+======================================== */
+
+.roadmap-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   183. Roadmap Icon
+======================================== */
+
+.roadmap-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   184. Roadmap Typography
+======================================== */
+
+.roadmap-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.roadmap-content h3{
+
+    margin:0;
+
+}
+
+.roadmap-content p{
+
+    flex:1;
+
+}
+
+.roadmap-duration{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.roadmap-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    margin-top:auto;
+
+}
+
+/* ========================================
+   185. Roadmap Hover
+======================================== */
+
+.roadmap-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.roadmap-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.roadmap-card:hover .roadmap-icon{
+
+    transform:scale(1.1);
+
+}
+
+.roadmap-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   186. Roadmap Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .roadmap-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .roadmap-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .roadmap-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .roadmap-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   187. Roadmap Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .roadmap-card{
+
+        transition:none;
+
+    }
+
+    .roadmap-card:hover{
+
+        transform:none;
+
+    }
+
+    .roadmap-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   188. Resume & Interview
+======================================== */
+
+.resume-interview{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   189. Resume Grid
+======================================== */
+
+.resume-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   190. Resume Card
+======================================== */
+
+.resume-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   191. Resume Icon
+======================================== */
+
+.resume-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   192. Resume Typography
+======================================== */
+
+.resume-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.resume-content h3{
+
+    margin:0;
+
+}
+
+.resume-content p{
+
+    flex:1;
+
+}
+
+.resume-tag{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.resume-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    margin-top:auto;
+
+}
+
+/* ========================================
+   193. Resume Hover
+======================================== */
+
+.resume-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.resume-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.resume-card:hover .resume-icon{
+
+    transform:scale(1.1);
+
+}
+
+.resume-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   194. Resume Responsive
+======================================== */
+
+
+@media (max-width:992px){
+
+    .resume-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .resume-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .resume-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .resume-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   195. Resume Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .resume-card{
+
+        transition:none;
+
+    }
+
+    .resume-card:hover{
+
+        transform:none;
+
+    }
+
+    .resume-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   196. Placement Preparation
+======================================== */
+
+.placement-preparation{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   197. Placement Grid
+======================================== */
+
+.placement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   198. Placement Card
+======================================== */
+
+.placement-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+  199. Placement Icon
+======================================== */
+
+.placement-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+  200. Placement Typography
+======================================== */
+
+.placement-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.placement-content h3{
+
+    margin:0;
+
+}
+
+.placement-content p{
+
+    flex:1;
+
+}
+
+.placement-tag{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.placement-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    margin-top:auto;
+
+}
+
+/* ========================================
+  201. Placement Hover
+======================================== */
+
+.placement-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.placement-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.placement-card:hover .placement-icon{
+
+    transform:scale(1.1);
+
+}
+
+.placement-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+  202. Placement Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .placement-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .placement-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .placement-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .placement-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+    203. Placement Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .placement-card{
+
+        transition:none;
+
+    }
+
+    .placement-card:hover{
+
+        transform:none;
+
+    }
+
+    .placement-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   204. Career CTA
+======================================== */
+
+.career-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   205. Career CTA Wrapper
+======================================== */
+
+.career-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-2xl);
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.career-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   206. Career CTA Typography
+======================================== */
+
+.career-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.career-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.career-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+
+/* ========================================
+   207. Career CTA Buttons
+======================================== */
+
+
+
+.career-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.career-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   208. Career CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .career-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .career-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .career-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ========================================
+   209. Career CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .career-cta-content{
+
+        transition:none;
+
+    }
+
+    .career-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
 
