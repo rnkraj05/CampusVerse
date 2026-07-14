@@ -6918,3 +6918,1098 @@ Author : Raunak Raj
 
 }
 
+/* ========================================
+   244. Resource Hero
+======================================== */
+
+.resource-hero{
+
+    position:relative;
+
+    padding:var(--space-12) 0 var(--space-10);
+
+}
+
+.resource-hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+
+}
+
+
+
+/* ========================================
+   245. Resource Hero Typography
+======================================== */
+
+.resource-hero-content h1{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    line-height:1.1;
+
+    max-width:14ch;
+
+}
+
+.resource-hero-content p{
+
+    max-width:68ch;
+
+}
+
+
+/* ========================================
+   246. Resource Categories
+======================================== */
+
+.resource-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   247. Resource Grid
+======================================== */
+
+.resource-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   248. Resource Card
+======================================== */
+
+.resource-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   249. Resource Icon
+======================================== */
+
+.resource-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   250. Resource Typography
+======================================== */
+
+.resource-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.resource-content h3{
+
+    margin:0;
+
+}
+
+.resource-content p{
+
+    flex:1;
+
+}
+
+.resource-meta{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.resource-card a{
+
+    text-decoration:none;
+
+    color:var(--primary-color);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    margin-top:auto;
+
+}
+
+/* ========================================
+   251. Resource Hover
+======================================== */
+
+.resource-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.resource-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.resource-card:hover .resource-icon{
+
+    transform:scale(1.1);
+
+}
+
+.resource-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   252. Resource Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .resource-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .resource-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .resource-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .resource-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   253. Resource Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .resource-card{
+
+        transition:none;
+
+    }
+
+    .resource-card:hover{
+
+        transform:none;
+
+    }
+
+    .resource-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   254. Resource Collections
+======================================== */
+
+.resource-collections{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   255. Collection Grid
+======================================== */
+
+.collection-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   256. Collection Card
+======================================== */
+
+.collection-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   257. Collection Icon
+======================================== */
+
+.collection-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   258. Collection Typography
+======================================== */
+
+.collection-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.collection-content h3{
+
+    margin:0;
+
+}
+
+.collection-content p{
+
+    flex:1;
+
+}
+
+.collection-meta{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.collection-card a{
+
+    text-decoration:none;
+
+    color:var(--primary-color);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    margin-top:auto;
+
+}
+
+
+/* ========================================
+   259. Collection Hover
+======================================== */
+
+.collection-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.collection-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.collection-card:hover .collection-icon{
+
+    transform:scale(1.1);
+
+}
+
+.collection-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   260. Collection Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .collection-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .collection-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .collection-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .collection-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   261. Collection Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .collection-card{
+
+        transition:none;
+
+    }
+
+    .collection-card:hover{
+
+        transform:none;
+
+    }
+
+    .collection-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   262. Interview Preparation
+======================================== */
+
+.interview-preparation{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   263. Interview Grid
+======================================== */
+
+.interview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   264. Interview Card
+======================================== */
+
+.interview-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   265. Interview Icon
+======================================== */
+
+.interview-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   266. Interview Typography
+======================================== */
+
+.interview-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.interview-content h3{
+
+    margin:0;
+
+}
+
+.interview-content p{
+
+    flex:1;
+
+}
+
+.interview-meta{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.interview-card a{
+
+    text-decoration:none;
+
+    color:var(--primary-color);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    margin-top:auto;
+
+}
+
+
+/* ========================================
+   267. Interview Hover
+======================================== */
+
+.interview-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.interview-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.interview-card:hover .interview-icon{
+
+    transform:scale(1.1);
+
+}
+
+.interview-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   268. Interview Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .interview-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .interview-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .interview-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .interview-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   269. Interview Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .interview-card{
+
+        transition:none;
+
+    }
+
+    .interview-card:hover{
+
+        transform:none;
+
+    }
+
+    .interview-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   270. Downloads
+======================================== */
+
+.downloads{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   271. Download Grid
+======================================== */
+
+.download-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   272. Download Card
+======================================== */
+
+.download-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+.download-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+.download-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.download-content h3{
+
+    margin:0;
+
+}
+
+.download-content p{
+
+    flex:1;
+
+}
+
+.download-meta{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.download-card a{
+
+    text-decoration:none;
+
+    color:var(--primary-color);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    margin-top:auto;
+
+}
+
+
+/* ========================================
+   273. Download Hover
+======================================== */
+
+.download-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.download-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.download-card:hover .download-icon{
+
+    transform:scale(1.1);
+
+}
+
+.download-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   274. Download Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .download-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .download-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .download-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .download-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   275. Download Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .download-card{
+
+        transition:none;
+
+    }
+
+    .download-card:hover{
+
+        transform:none;
+
+    }
+
+    .download-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   276. Resource CTA
+======================================== */
+
+.resource-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   277. Resource CTA Content
+======================================== */
+
+.resource-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.resource-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.resource-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.resource-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.resource-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+.resource-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.resource-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+
+/* ========================================
+   278. Resource CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .resource-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .resource-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .resource-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ========================================
+   279. Resource CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .resource-cta-content{
+
+        transition:none;
+
+    }
+
+    .resource-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
+
