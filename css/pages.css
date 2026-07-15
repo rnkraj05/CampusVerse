@@ -8013,3 +8013,1044 @@ Author : Raunak Raj
 
 }
 
+/* ========================================
+   280. Journey Hero
+======================================== */
+
+.journey-builder-hero{
+
+    position:relative;
+
+    padding:var(--space-12) 0 var(--space-10);
+
+}
+
+.journey-builder-hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-4);
+
+}
+
+
+/* ========================================
+   281. Journey Hero Typography
+======================================== */
+
+.journey-builder-hero-content h1{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    line-height:1.1;
+
+    max-width:14ch;
+
+}
+
+.journey-builder-hero-content p{
+
+    max-width:68ch;
+
+}
+
+
+/* ========================================
+   282. Journey Categories
+======================================== */
+
+.journey-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   283. Journey Grid
+======================================== */
+
+.journey-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   284. Journey Card
+======================================== */
+
+.journey-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   285. Journey Icon
+======================================== */
+
+.journey-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   286. Journey Typography
+======================================== */
+
+.journey-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.journey-content h3{
+
+    margin:0;
+
+}
+
+.journey-content p{
+
+    flex:1;
+
+}
+
+
+/* ========================================
+   287. Journey Hover
+======================================== */
+
+.journey-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.journey-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.journey-card:hover .journey-icon{
+
+    transform:scale(1.1);
+
+}
+
+.journey-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   288. Learning Paths
+======================================== */
+
+.learning-paths{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   289. Learning Path Grid
+======================================== */
+
+.learning-path-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-7);
+
+}
+
+
+/* ========================================
+   290. Learning Path Card
+======================================== */
+
+.learning-path-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-5);
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-sm);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   291. Learning Path Icon
+======================================== */
+
+.learning-path-icon{
+
+    font-size:1.5rem;
+
+    line-height:1;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   292. Learning Path Typography
+======================================== */
+
+.learning-path-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    flex:1;
+
+}
+
+.learning-path-content h3{
+
+    margin:0;
+
+}
+
+.learning-path-content p{
+
+    flex:1;
+
+}
+
+.path-duration{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.learning-path-card a{
+
+    text-decoration:none;
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    margin-top:auto;
+
+}
+
+
+/* ========================================
+   293. Learning Path Hover
+======================================== */
+
+.learning-path-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.learning-path-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.learning-path-card:hover .learning-path-icon{
+
+    transform:scale(1.1);
+
+}
+
+.learning-path-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   294. Learning Path Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .learning-path-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .learning-path-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .learning-path-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .learning-path-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   295. Learning Path Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .learning-path-card{
+
+        transition:none;
+
+    }
+
+    .learning-path-card:hover{
+
+        transform:none;
+
+    }
+
+    .learning-path-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   296. Journey Steps
+======================================== */
+
+.journey-steps{
+
+    padding:var(--space-10) 0;
+
+}
+
+.steps-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   297. Step Card
+======================================== */
+
+.step-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+
+/* ========================================
+   298. Step Icon
+======================================== */
+
+.step-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   299. Step Typography
+======================================== */
+
+.step-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+    flex:1;
+
+}
+
+.step-content h3{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.3;
+
+}
+
+.step-content p{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+.step-meta{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.step-content a{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+}
+
+
+/* ========================================
+   300. Step Hover
+======================================== */
+
+.step-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.step-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--primary-color);
+
+}
+
+.step-card:hover .step-icon{
+
+    transform:scale(1.15);
+
+}
+
+.step-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   301. Journey Steps Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .steps-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .steps-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .step-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .step-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   302. Journey Steps Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .step-card{
+
+        transition:none;
+
+    }
+
+    .step-card:hover{
+
+        transform:none;
+
+    }
+
+    .step-icon{
+
+        transition:none;
+
+    }
+
+}
+
+/* ========================================
+   303. Progress Tools
+======================================== */
+
+.progress-tools{
+
+    padding:var(--space-10) 0;
+
+}
+
+.progress-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-5);
+
+    margin-top:var(--space-7);
+
+}
+
+/* ========================================
+   304. Progress Card
+======================================== */
+
+.progress-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   305. Progress Icon
+======================================== */
+
+.progress-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+/* ========================================
+   306. Progress Typography
+======================================== */
+
+.progress-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+    flex:1;
+
+}
+
+.progress-content h3{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.3;
+
+}
+
+.progress-content p{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+}
+
+.progress-meta{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-medium);
+
+    color:var(--text-secondary);
+
+}
+
+.progress-content a{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+}
+
+
+/* ========================================
+   307. Progress Hover
+======================================== */
+
+.progress-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.progress-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--primary-color);
+
+}
+
+.progress-card:hover .progress-icon{
+
+    transform:scale(1.15);
+
+}
+
+.progress-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+/* ========================================
+   308. Progress Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .progress-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .progress-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .progress-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .progress-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+/* ========================================
+   309. Progress Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .progress-card{
+
+        transition:none;
+
+    }
+
+    .progress-card:hover{
+
+        transform:none;
+
+    }
+
+    .progress-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   310. Journey Builder CTA
+======================================== */
+
+.journey-builder-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   311. Journey Builder CTA Wrapper
+======================================== */
+
+.journey-builder-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.journey-builder-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+/* ========================================
+   312. Journey Builder CTA Typography
+======================================== */
+
+.journey-builder-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.journey-builder-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.journey-builder-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+
+/* ========================================
+   313. Journey Builder CTA Buttons
+======================================== */
+
+.journey-builder-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.journey-builder-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+
+/* ========================================
+   314. Journey Builder CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .journey-builder-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .journey-builder-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .journey-builder-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ========================================
+   315. Journey Builder CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .journey-builder-cta-content{
+
+        transition:none;
+
+    }
+
+    .journey-builder-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
