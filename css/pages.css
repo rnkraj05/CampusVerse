@@ -9745,3 +9745,936 @@ Author : Raunak Raj
     }
 
 }
+
+/* ========================================
+   347. Dashboard Hero
+======================================== */
+
+.dashboard-hero{
+
+    padding:var(--space-10) 0 var(--space-6);
+
+}
+
+/* ========================================
+   348. Dashboard Hero Typography
+======================================== */
+
+.dashboard-hero-content{
+
+    max-width:720px;
+
+}
+
+.dashboard-hero-content h1{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.dashboard-hero-content p{
+
+    max-width:60ch;
+
+    line-height:1.7;
+
+}
+
+
+/* ========================================
+   349. Quick Access
+======================================== */
+
+.quick-access{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   350. Quick Access Grid
+======================================== */
+
+.quick-access-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+
+/* ========================================
+   351. Quick Access Card
+======================================== */
+
+.quick-access-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-5);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-3);
+
+    height:100%;
+
+    cursor:pointer;
+
+}
+
+/* ========================================
+   352. Quick Access Icon
+======================================== */
+
+.quick-access-icon{
+
+    width:2rem;
+
+    height:2rem;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:var(--fs-xl);
+
+    line-height:1;
+
+    color:var(--primary-color);
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ========================================
+   353. Quick Access Typography
+======================================== */
+
+.quick-access-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+    flex:1;
+
+}
+
+.quick-access-content h3{
+
+    font-size:var(--fs-2xl);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--secondary-color);
+
+    line-height:1.3;
+
+}
+
+.quick-access-content p{
+
+    font-size:var(--fs-md);
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    flex:1;
+
+}
+
+.quick-access-content a{
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--primary-color);
+
+    text-decoration:none;
+
+}
+
+
+/* ========================================
+   354. Quick Access Hover
+======================================== */
+
+.quick-access-card{
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    will-change:transform;
+
+}
+
+.quick-access-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--primary-color);
+
+}
+
+.quick-access-card:hover .quick-access-icon{
+
+    transform:scale(1.15);
+
+}
+
+.quick-access-card:focus-visible{
+
+    outline:2px solid var(--primary-color);
+
+    outline-offset:4px;
+
+}
+
+
+/* ========================================
+   355. Quick Access Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .quick-access-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .quick-access-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .quick-access-card{
+
+        padding:var(--space-4);
+
+    }
+
+    .quick-access-content h3{
+
+        font-size:var(--fs-xl);
+
+    }
+
+}
+
+
+/* ========================================
+   356. Quick Access Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .quick-access-card{
+
+        transition:none;
+
+    }
+
+    .quick-access-card:hover{
+
+        transform:none;
+
+    }
+
+    .quick-access-icon{
+
+        transition:none;
+
+    }
+
+}
+
+
+/* ========================================
+   357. Continue Learning
+======================================== */
+
+.continue-learning{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   358. Continue Learning Grid
+======================================== */
+
+.continue-learning-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+
+/* ========================================
+   359. Continue Learning Card
+======================================== */
+
+.continue-learning-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* ========================================
+   360. Continue Learning Icon
+======================================== */
+
+.continue-learning-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+
+/* ========================================
+   361. Continue Learning Typography
+======================================== */
+
+.continue-learning-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.continue-learning-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.continue-learning-meta{
+
+    margin-bottom:var(--space-4);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    color:var(--text-muted);
+
+}
+
+.continue-learning-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+/* ========================================
+   362. Continue Learning Hover
+======================================== */
+
+.continue-learning-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+/* ========================================
+   363. Continue Learning Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .continue-learning-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   364. Continue Learning Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .continue-learning-card{
+
+        transition:none;
+
+    }
+
+    .continue-learning-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   365. Learning Progress
+======================================== */
+
+.learning-progress{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   366. Learning Progress Grid
+======================================== */
+
+.learning-progress-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   367. Learning Progress Card
+======================================== */
+
+.learning-progress-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* ========================================
+   368. Learning Progress Icon
+======================================== */
+
+.learning-progress-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+
+/* ========================================
+   369. Learning Progress Typography
+======================================== */
+
+.learning-progress-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.learning-progress-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.learning-progress-meta{
+
+    margin-bottom:var(--space-4);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    color:var(--text-muted);
+
+}
+
+
+/* ========================================
+   370. Learning Progress Hover
+======================================== */
+
+.learning-progress-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   371. Learning Progress Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .learning-progress-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   372. Learning Progress Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .learning-progress-card{
+
+        transition:none;
+
+    }
+
+    .learning-progress-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   373. Recommended Resources
+======================================== */
+
+.recommended-resources{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   374. Recommended Grid
+======================================== */
+
+.recommended-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+
+/* ========================================
+   375. Recommended Card
+======================================== */
+
+.recommended-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* ========================================
+   376. Recommended Icon
+======================================== */
+
+.recommended-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+
+/* ========================================
+   377. Recommended Typography
+======================================== */
+
+.recommended-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.recommended-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.recommended-meta{
+
+    margin-bottom:var(--space-4);
+
+    font-size:var(--fs-sm);
+
+    font-weight:var(--font-semibold);
+
+    color:var(--text-muted);
+
+}
+
+.recommended-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    text-decoration:none;
+
+    font-weight:var(--font-semibold);
+
+}
+
+
+/* ========================================
+   378. Recommended Hover
+======================================== */
+
+.recommended-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   379. Recommended Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .recommended-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ========================================
+   380. Recommended Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .recommended-card{
+
+        transition:none;
+
+    }
+
+    .recommended-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
+/* ========================================
+   381. Dashboard CTA
+======================================== */
+
+.dashboard-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   382. Dashboard CTA Wrapper
+======================================== */
+
+.dashboard-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    text-align:center;
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-lg);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.dashboard-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+/* ========================================
+   383. Dashboard CTA Typography
+======================================== */
+
+.dashboard-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.dashboard-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.dashboard-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+
+/* ========================================
+   384. Dashboard CTA Buttons
+======================================== */
+
+.dashboard-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.dashboard-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+
+/* ========================================
+   385. Dashboard CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .dashboard-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .dashboard-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .dashboard-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ========================================
+   386. Dashboard CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .dashboard-cta-content{
+
+        transition:none;
+
+    }
+
+    .dashboard-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
