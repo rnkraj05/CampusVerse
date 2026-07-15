@@ -12318,3 +12318,788 @@ Author : Raunak Raj
     }
 
 }
+
+/* ========================================
+   467. Learning Journey Hero
+======================================== */
+
+.learning-journey-hero{
+
+    padding:var(--space-10) 0 var(--space-6);
+
+}
+
+/* ========================================
+   468. Learning Journey Hero Typography
+======================================== */
+
+.learning-journey-hero-content{
+
+    max-width:720px;
+
+}
+
+.learning-journey-hero-content h1{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.learning-journey-hero-content p{
+
+    max-width:60ch;
+
+    line-height:1.7;
+
+}
+
+/* ========================================
+   469. Journey Levels
+======================================== */
+
+.journey-levels{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   470. Journey Levels Grid
+======================================== */
+
+.journey-levels-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   471. Journey Level Card
+======================================== */
+
+.journey-level-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   472. Journey Level Icon
+======================================== */
+
+.journey-level-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   473. Journey Level Typography
+======================================== */
+
+.journey-level-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.journey-level-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.journey-level-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   474. Journey Level Hover
+======================================== */
+
+.journey-level-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   475. Journey Level Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .journey-levels-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   476. Journey Level Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .journey-level-card{
+
+        transition:none;
+
+    }
+
+    .journey-level-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   477. Learning Roadmap
+======================================== */
+
+.learning-roadmap{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   478. Learning Roadmap Grid
+======================================== */
+
+.learning-roadmap-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   479. Roadmap Card
+======================================== */
+
+.roadmap-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   480. Roadmap Number
+======================================== */
+
+.roadmap-number{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+    font-size:var(--fs-lg);
+
+    font-weight:var(--font-bold);
+
+}
+
+/* ========================================
+   481. Roadmap Typography
+======================================== */
+
+.roadmap-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.roadmap-content p{
+
+    line-height:1.7;
+
+    color:var(--text-secondary);
+
+}
+
+/* ========================================
+   482. Roadmap Hover
+======================================== */
+
+.roadmap-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   483. Roadmap Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .learning-roadmap-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   484. Roadmap Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .roadmap-card{
+
+        transition:none;
+
+    }
+
+    .roadmap-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   485. Journey Milestones
+======================================== */
+
+.journey-milestones{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   486. Journey Milestones Grid
+======================================== */
+
+.journey-milestones-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   487. Milestone Card
+======================================== */
+
+.milestone-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   488. Milestone Icon
+======================================== */
+
+.milestone-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   489. Milestone Typography
+======================================== */
+
+.milestone-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.milestone-content p{
+
+    line-height:1.7;
+
+    color:var(--text-secondary);
+
+}
+
+/* ========================================
+   490. Milestone Hover
+======================================== */
+
+.milestone-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   491. Journey Milestones Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .journey-milestones-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   492. Journey Milestones Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .milestone-card{
+
+        transition:none;
+
+    }
+
+    .milestone-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   493. Recommended Learning
+======================================== */
+
+.recommended-learning{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   494. Recommended Learning Grid
+======================================== */
+
+.recommended-learning-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   495. Recommended Learning Card
+======================================== */
+
+.recommended-learning-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   496. Recommended Learning Icon
+======================================== */
+
+.recommended-learning-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   497. Recommended Learning Typography
+======================================== */
+
+.recommended-learning-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.recommended-learning-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.recommended-learning-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   498. Recommended Learning Hover
+======================================== */
+
+.recommended-learning-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   499. Recommended Learning Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .recommended-learning-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   500. Recommended Learning Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .recommended-learning-card{
+
+        transition:none;
+
+    }
+
+    .recommended-learning-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   501. Learning Journey CTA
+======================================== */
+
+.learning-journey-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   502. Learning Journey CTA Wrapper
+======================================== */
+
+.learning-journey-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    text-align:center;
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-lg);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+.learning-journey-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+/* ========================================
+   503. Learning Journey CTA Typography
+======================================== */
+
+.learning-journey-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.learning-journey-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.learning-journey-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+/* ========================================
+   504. Learning Journey CTA Buttons
+======================================== */
+
+.learning-journey-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.learning-journey-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   505. Learning Journey CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .learning-journey-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .learning-journey-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .learning-journey-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ========================================
+   506. Learning Journey CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .learning-journey-cta-content{
+
+        transition:none;
+
+    }
+
+    .learning-journey-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
