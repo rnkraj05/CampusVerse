@@ -9054,3 +9054,694 @@ Author : Raunak Raj
     }
 
 }
+
+
+/* ========================================
+   316. Search Hero
+======================================== */
+
+.search-hero{
+
+    padding:var(--space-10) 0 var(--space-6);
+
+}
+
+
+/* ========================================
+   317. Search Hero Typography
+======================================== */
+
+.search-hero-content{
+
+    max-width:720px;
+
+}
+
+.search-hero-content h1{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.search-hero-content p{
+
+    max-width:60ch;
+
+    line-height:1.7;
+
+}
+
+
+/* ========================================
+   318. Search Box
+======================================== */
+
+.search-box{
+
+    padding-bottom:var(--space-8);
+
+}
+
+.search-box-wrapper{
+
+    display:flex;
+
+    gap:var(--space-3);
+
+    align-items:center;
+
+}
+
+.search-box-wrapper .input{
+
+    flex:1;
+
+}
+
+/* ========================================
+   319. Search Categories
+======================================== */
+
+.search-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   320. Search Grid
+======================================== */
+
+.search-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+
+/* ========================================
+   321. Search Card
+======================================== */
+
+.search-card{
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* ========================================
+   322. Search Icon
+======================================== */
+
+.search-icon{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.35rem;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+}
+
+
+/* ========================================
+   323. Search Typography
+======================================== */
+
+.search-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.search-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.search-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   324. Search Hover
+======================================== */
+
+.search-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   325. Search Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .search-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .search-box-wrapper{
+
+        flex-direction:column;
+
+    }
+
+    .search-box-wrapper .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ========================================
+   326. Search Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .search-card{
+
+        transition:none;
+
+    }
+
+    .search-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   327. Search Results
+======================================== */
+
+.search-results{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   328. Results Grid
+======================================== */
+
+.search-results-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+
+/* ========================================
+   329. Result Card
+======================================== */
+
+.search-result-card{
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+/* ========================================
+   330. Result Icon
+======================================== */
+
+.search-result-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.4rem;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+}
+
+
+/* ========================================
+   331. Result Typography
+======================================== */
+
+.search-result-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.search-result-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.search-result-meta{
+
+    margin-bottom:var(--space-4);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    color:var(--text-muted);
+
+}
+
+.search-result-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+
+/* ========================================
+   332. Result Hover
+======================================== */
+
+.search-result-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+/* ========================================
+   333. Result Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .search-results-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ========================================
+   334. Popular Searches
+======================================== */
+
+.popular-searches{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   335. Popular Grid
+======================================== */
+
+.popular-search-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   336. Popular Card
+======================================== */
+
+.popular-search-card{
+
+    padding:var(--space-6);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+/* ========================================
+   337. Popular Icon
+======================================== */
+
+.popular-search-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+
+/* ========================================
+   338. Popular Typography
+======================================== */
+
+.popular-search-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.popular-search-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.popular-search-meta{
+
+    margin-bottom:var(--space-4);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    color:var(--text-muted);
+
+}
+
+.popular-search-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+
+/* ========================================
+   339. Popular Hover
+======================================== */
+
+.popular-search-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+/* ========================================
+   340. Popular Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .popular-search-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* ========================================
+   341. Search CTA
+======================================== */
+
+.search-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   342. Search CTA Wrapper
+======================================== */
+
+.search-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    text-align:center;
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-lg);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.search-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   343. Search CTA Typography
+======================================== */
+
+.search-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.search-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.search-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+/* ========================================
+   344. Search CTA Buttons
+======================================== */
+
+.search-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.search-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   345. Search CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .search-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .search-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .search-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ========================================
+   346. Search CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .search-cta-content{
+
+        transition:none;
+
+    }
+
+    .search-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
