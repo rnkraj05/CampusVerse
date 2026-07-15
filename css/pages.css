@@ -10678,3 +10678,827 @@ Author : Raunak Raj
     }
 
 }
+
+
+/* ========================================
+   387. LaunchPad Hero
+======================================== */
+
+.launchpad-hero{
+
+    padding:var(--space-10) 0 var(--space-6);
+
+}
+
+/* ========================================
+   388. LaunchPad Hero Typography
+======================================== */
+
+.launchpad-hero-content{
+
+    max-width:720px;
+
+}
+
+.launchpad-hero-content h1{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.launchpad-hero-content p{
+
+    max-width:60ch;
+
+    line-height:1.7;
+
+}
+
+/* ========================================
+   389. Featured Tracks
+======================================== */
+
+.featured-tracks{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   390. Featured Tracks Grid
+======================================== */
+
+.featured-tracks-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+
+/* ========================================
+   391. Featured Track Card
+======================================== */
+
+.featured-track-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   392. Featured Track Icon
+======================================== */
+
+.featured-track-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   393. Featured Track Typography
+======================================== */
+
+.featured-track-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.featured-track-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.featured-track-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   394. Featured Track Hover
+======================================== */
+
+.featured-track-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   395. Featured Track Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .featured-tracks-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   396. Featured Track Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .featured-track-card{
+
+        transition:none;
+
+    }
+
+    .featured-track-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
+/* ========================================
+   397. Learning Modules
+======================================== */
+
+.learning-modules{
+
+    padding:var(--space-10) 0;
+
+}
+
+
+/* ========================================
+   398. Learning Modules Grid
+======================================== */
+
+.learning-modules-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+
+/* ========================================
+   399. Learning Module Card
+======================================== */
+
+.learning-module-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+
+/* ========================================
+   400. Learning Module Icon
+======================================== */
+
+.learning-module-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+
+/* ========================================
+   401. Learning Module Typography
+======================================== */
+
+.learning-module-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.learning-module-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.learning-module-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   402. Learning Module Hover
+======================================== */
+
+.learning-module-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   403. Learning Module Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .learning-modules-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   404. Learning Module Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .learning-module-card{
+
+        transition:none;
+
+    }
+
+    .learning-module-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
+/* ========================================
+   405. Tools & Resources
+======================================== */
+
+.tools-resources{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   406. Tools & Resources Grid
+======================================== */
+
+.tools-resources-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   407. Tool Resource Card
+======================================== */
+
+.tool-resource-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   408. Tool Resource Icon
+======================================== */
+
+.tool-resource-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   409. Tool Resource Typography
+======================================== */
+
+.tool-resource-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.tool-resource-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.tool-resource-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   410. Tool Resource Hover
+======================================== */
+
+.tool-resource-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   411. Tools & Resources Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .tools-resources-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   412. Tools & Resources Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .tool-resource-card{
+
+        transition:none;
+
+    }
+
+    .tool-resource-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+
+/* ========================================
+   413. Launch Timeline
+======================================== */
+
+.launch-timeline{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   414. Launch Timeline Grid
+======================================== */
+
+.launch-timeline-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   415. Launch Step Card
+======================================== */
+
+.launch-step-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    height:100%;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   416. Launch Step Number
+======================================== */
+
+.launch-step-number{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+    font-size:var(--fs-lg);
+
+    font-weight:var(--font-bold);
+
+}
+
+/* ========================================
+   417. Launch Step Typography
+======================================== */
+
+.launch-step-content h3{
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.25;
+
+    min-height:72px;
+
+}
+
+.launch-step-content p{
+
+    line-height:1.7;
+
+    color:var(--text-secondary);
+
+}
+
+.launch-step-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+/* ========================================
+   418. Launch Timeline Hover
+======================================== */
+
+.launch-step-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   419. Launch Timeline Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .launch-timeline-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   420. Launch Timeline Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .launch-step-card{
+
+        transition:none;
+
+    }
+
+    .launch-step-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   421. LaunchPad CTA
+======================================== */
+
+.launchpad-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   422. LaunchPad CTA Wrapper
+======================================== */
+
+.launchpad-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    text-align:center;
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-lg);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+.launchpad-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+
+/* ========================================
+   423. LaunchPad CTA Typography
+======================================== */
+
+.launchpad-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.launchpad-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.launchpad-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+/* ========================================
+   424. LaunchPad CTA Buttons
+======================================== */
+
+.launchpad-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.launchpad-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   425. LaunchPad CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .launchpad-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .launchpad-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .launchpad-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ========================================
+   426. LaunchPad CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .launchpad-cta-content{
+
+        transition:none;
+
+    }
+
+    .launchpad-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
