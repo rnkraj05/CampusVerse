@@ -13103,3 +13103,796 @@ Author : Raunak Raj
     }
 
 }
+
+/* ========================================
+   507. Assessment Hero
+======================================== */
+
+.assessment-hero{
+
+    padding:var(--space-10) 0 var(--space-6);
+
+}
+
+/* ========================================
+   508. Assessment Hero Typography
+======================================== */
+
+.assessment-hero-content{
+
+    max-width:720px;
+
+}
+
+.assessment-hero-content h1{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.assessment-hero-content p{
+
+    max-width:60ch;
+
+    line-height:1.7;
+
+}
+
+/* ========================================
+   509. Assessment Categories
+======================================== */
+
+.assessment-categories{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   510. Assessment Categories Grid
+======================================== */
+
+.assessment-categories-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   511. Assessment Category Card
+======================================== */
+
+.assessment-category-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   512. Assessment Category Icon
+======================================== */
+
+.assessment-category-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   513. Assessment Category Typography
+======================================== */
+
+.assessment-category-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.assessment-category-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.assessment-category-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   514. Assessment Category Hover
+======================================== */
+
+.assessment-category-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   515. Assessment Category Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .assessment-categories-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   516. Assessment Category Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .assessment-category-card{
+
+        transition:none;
+
+    }
+
+    .assessment-category-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   517. Featured Assessments
+======================================== */
+
+.featured-assessments{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   518. Featured Assessments Grid
+======================================== */
+
+.featured-assessments-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   519. Featured Assessment Card
+======================================== */
+
+.featured-assessment-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   520. Featured Assessment Icon
+======================================== */
+
+.featured-assessment-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   521. Featured Assessment Typography
+======================================== */
+
+.featured-assessment-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.featured-assessment-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.featured-assessment-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   522. Featured Assessment Hover
+======================================== */
+
+.featured-assessment-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   523. Featured Assessment Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .featured-assessments-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   524. Featured Assessment Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .featured-assessment-card{
+
+        transition:none;
+
+    }
+
+    .featured-assessment-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   525. Performance Tracker
+======================================== */
+
+.performance-tracker{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   526. Performance Tracker Grid
+======================================== */
+
+.performance-tracker-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   527. Performance Card
+======================================== */
+
+.performance-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   528. Performance Icon
+======================================== */
+
+.performance-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   529. Performance Typography
+======================================== */
+
+.performance-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.performance-content p{
+
+    line-height:1.7;
+
+    color:var(--text-secondary);
+
+}
+
+/* ========================================
+   530. Performance Hover
+======================================== */
+
+.performance-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   531. Performance Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .performance-tracker-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   532. Performance Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .performance-card{
+
+        transition:none;
+
+    }
+
+    .performance-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   533. Assessment Resources
+======================================== */
+
+.assessment-resources{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   534. Assessment Resources Grid
+======================================== */
+
+.assessment-resources-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:var(--space-6);
+
+    margin-top:var(--space-8);
+
+}
+
+/* ========================================
+   535. Assessment Resource Card
+======================================== */
+
+.assessment-resource-card{
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    padding:var(--space-6);
+
+    box-shadow:var(--shadow-md);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+/* ========================================
+   536. Assessment Resource Icon
+======================================== */
+
+.assessment-resource-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:var(--space-4);
+
+    border-radius:50%;
+
+    background:var(--surface-secondary);
+
+    font-size:1.4rem;
+
+}
+
+/* ========================================
+   537. Assessment Resource Typography
+======================================== */
+
+.assessment-resource-content h3{
+
+    margin-bottom:var(--space-3);
+
+}
+
+.assessment-resource-content p{
+
+    margin-bottom:var(--space-4);
+
+    line-height:1.7;
+
+}
+
+.assessment-resource-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-weight:var(--font-semibold);
+
+    text-decoration:none;
+
+}
+
+/* ========================================
+   538. Assessment Resource Hover
+======================================== */
+
+.assessment-resource-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   539. Assessment Resources Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .assessment-resources-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ========================================
+   540. Assessment Resources Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .assessment-resource-card{
+
+        transition:none;
+
+    }
+
+    .assessment-resource-card:hover{
+
+        transform:none;
+
+    }
+
+}
+
+/* ========================================
+   541. Assessment CTA
+======================================== */
+
+.assessment-cta{
+
+    padding:var(--space-10) 0;
+
+}
+
+/* ========================================
+   542. Assessment CTA Wrapper
+======================================== */
+
+.assessment-cta-content{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:var(--space-8);
+
+    text-align:center;
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:var(--shadow-lg);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+.assessment-cta-content:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* ========================================
+   543. Assessment CTA Typography
+======================================== */
+
+.assessment-cta-content h2{
+
+    margin-top:var(--space-2);
+
+    margin-bottom:var(--space-3);
+
+    line-height:1.15;
+
+}
+
+.assessment-cta-content p{
+
+    max-width:60ch;
+
+    margin:0 auto;
+
+    line-height:1.7;
+
+}
+
+.assessment-cta-content .section-badge{
+
+    margin-bottom:var(--space-2);
+
+}
+
+/* ========================================
+   544. Assessment CTA Buttons
+======================================== */
+
+.assessment-cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:var(--space-4);
+
+    flex-wrap:wrap;
+
+    margin-top:var(--space-6);
+
+}
+
+.assessment-cta-buttons .btn{
+
+    min-width:180px;
+
+}
+
+/* ========================================
+   545. Assessment CTA Responsive
+======================================== */
+
+@media (max-width:768px){
+
+    .assessment-cta-content{
+
+        padding:var(--space-5);
+
+    }
+
+    .assessment-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .assessment-cta-buttons .btn{
+
+        width:100%;
+
+    }
+
+}
+
+/* ========================================
+   546. Assessment CTA Reduced Motion
+======================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .assessment-cta-content{
+
+        transition:none;
+
+    }
+
+    .assessment-cta-content:hover{
+
+        transform:none;
+
+    }
+
+}
