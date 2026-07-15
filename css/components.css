@@ -368,6 +368,405 @@ Input with Icon
     display:none;
 }
 
+
+/* ========================================
+   Navigation
+======================================== */
+
+/* ========================================
+   12. Header
+======================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.90);
+
+    backdrop-filter:blur(14px);
+
+    -webkit-backdrop-filter:blur(14px);
+
+    border-bottom:1px solid var(--border-color);
+
+    transition:
+        background .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+}
+
+.header-scrolled{
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+}
+
+/* ========================================
+   13. Navbar
+======================================== */
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    min-height:72px;
+
+    gap:2rem;
+
+}
+
+/* ========================================
+   14. Logo
+======================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    flex-shrink:0;
+
+}
+
+.logo-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:var(--primary-color);
+
+    color:var(--white);
+
+    font-size:1.3rem;
+
+}
+
+.logo-text{
+
+    font-size:1.35rem;
+
+    font-weight:var(--font-bold);
+
+    color:var(--text-primary);
+
+}
+
+
+/* ========================================
+   15. Navigation Menu
+======================================== */
+
+.nav-menu{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.nav-list{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-6);
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+/* ========================================
+   16. Navigation Links
+======================================== */
+
+.nav-link{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:var(--text-primary);
+
+    font-weight:var(--font-medium);
+
+    transition:color .3s ease;
+
+}
+
+.nav-link:hover,
+
+.nav-link.active{
+
+    color:var(--primary-color);
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary-color);
+
+    transition:width .3s ease;
+
+}
+
+.nav-link:hover::after,
+
+.nav-link.active::after{
+
+    width:100%;
+
+}
+
+/* ========================================
+   17. Navigation Actions
+======================================== */
+
+.nav-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--space-3);
+
+    flex-shrink:0;
+
+}
+
+.nav-action{
+
+    text-decoration:none;
+
+    color:var(--text-primary);
+
+    font-weight:var(--font-medium);
+
+}
+
+/* ========================================
+   18. Theme Toggle
+======================================== */
+
+.theme-toggle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+
+}
+
+.theme-toggle:hover{
+
+    background:var(--surface-secondary);
+
+    transform:rotate(15deg);
+
+}
+
+/* ========================================
+   19. Mobile Menu Button
+======================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:5px;
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+}
+
+.menu-toggle span{
+
+    width:24px;
+
+    height:2px;
+
+    background:var(--text-primary);
+
+    border-radius:999px;
+
+}
+
+/* ========================================
+   20. Navigation Responsive
+======================================== */
+
+@media (max-width:992px){
+
+    .navbar{
+
+        position:relative;
+
+    }
+
+    .nav-menu{
+
+        display:none;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:var(--surface-color);
+
+        border:1px solid var(--border-color);
+
+        border-radius:var(--radius-lg);
+
+        padding:var(--space-4);
+
+        box-shadow:var(--shadow-lg);
+
+    }
+
+    .nav-list{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:var(--space-4);
+
+    }
+
+    .nav-actions{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+}
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.nav-menu.nav-open{
+
+    display:flex;
+
+}
+
+.nav-menu.nav-open{
+
+    animation:fadeIn .25s ease;
+
+}
+
+body.menu-open{
+
+    overflow:hidden;
+
+}
+
+
+
+
 /*
 ========================================
 CHANGE LOG
