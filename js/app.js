@@ -40,7 +40,7 @@ const CampusVerseApp = {
 
     initializeSearch() {
 
-        console.log("Search Ready");
+        CampusVerseSearch.init();
 
     },
 
