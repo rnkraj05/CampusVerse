@@ -16,6 +16,14 @@ const CampusVerseApp = {
 
         this.initializeSearch();
 
+        this.initializeDashboard();
+
+        this.initializeAssessment();
+
+        this.initializeJourney();
+
+        this.initializeUtilities();
+
         this.initializeForms();
 
         this.initializeButtons();
@@ -23,6 +31,7 @@ const CampusVerseApp = {
         this.initializeCards();
 
         this.initializeScroll();
+
 
     },
 
@@ -41,6 +50,46 @@ const CampusVerseApp = {
     initializeSearch() {
 
         CampusVerseSearch.init();
+
+    },
+
+    initializeDashboard() {
+
+        if (typeof CampusVerseDashboard !== "undefined") {
+
+            CampusVerseDashboard.init();
+
+        }
+
+    },
+
+    initializeAssessment() {
+
+        if (typeof CampusVerseAssessment !== "undefined") {
+
+            CampusVerseAssessment.init();
+
+        }
+
+    },
+
+    initializeJourney() {
+
+        if(typeof CampusVerseJourney !== "undefined") {
+
+            CampusVerseJourney.init();
+
+        }
+
+    },
+
+    initializeUtilities() {
+
+        if (typeof CampusVerseUtils !== "undefined") {
+
+            CampusVerseUtils.init();
+
+        }
 
     },
 
