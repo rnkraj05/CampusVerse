@@ -43,7 +43,8 @@ async function loadResources() {
 
                     </div>
 
-                    <a href="${resource.resourceLink}" target="_blank">
+                    <a href="${resource.resourceLink || '#'}"
+                        target="_blank">
 
                         Open Resource →
 
